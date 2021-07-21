@@ -1,1 +1,141 @@
-/* Other rules */
+@font-face {
+  font-family: "HelveticaNeue";
+  src: local("HelveticaNeueBold"), url(./HelveticaNeueBold.woff) format("woff");
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eaeff3;
+}
+
+.container {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Source Toogle button : https://www.w3schools.com/howto/howto_css_switch.asp*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px; /*60*/
+  height: 60px; /*34*/
+  margin-bottom: 50px;
+  margin-left: -200px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sliderR,
+.sliderG,
+.sliderB {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #909090;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.sliderR:before,
+.sliderG:before,
+.sliderB:before {
+  position: absolute;
+  content: "";
+  height: 52px; /*26*/
+  width: 52px; /*26*/
+  left: 4px;
+  bottom: 4px;
+  background-color: #d2d1d1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .sliderR {
+  background-color: #83575e;
+}
+
+input:focus + .sliderR {
+  box-shadow: 0 0 1px #83575e;
+}
+
+input:checked + .sliderG {
+  background-color: #6d8f5f;
+}
+
+input:focus + .sliderG {
+  box-shadow: 0 0 1px #6d8f5f;
+}
+
+input:checked + .sliderB {
+  background-color: #58698c;
+}
+
+input:focus + .sliderB {
+  box-shadow: 0 0 1px #58698c;
+}
+
+input:checked + .sliderR:before {
+  -webkit-transform: translateX(52px); /*26*/
+  -ms-transform: translateX(52px); /*26*/
+  transform: translateX(52px); /*26*/
+  background-color: #a14850;
+}
+
+input:checked + .sliderG:before {
+  -webkit-transform: translateX(52px); /*26*/
+  -ms-transform: translateX(52px); /*26*/
+  transform: translateX(52px); /*26*/
+  background-color: #61a048;
+}
+
+input:checked + .sliderB:before {
+  -webkit-transform: translateX(52px); /*26*/
+  -ms-transform: translateX(52px); /*26*/
+  transform: translateX(52px); /*26*/
+  background-color: #4d68a4;
+}
+
+/* Rounded sliders */
+.sliderR.round,
+.sliderG.round,
+.sliderB.round {
+  border-radius: 60px; /*34*/
+}
+
+.sliderR.round:before,
+.sliderG.round:before,
+.sliderB.round:before {
+  border-radius: 50%;
+}
+
+p {
+  margin-left: 200px;
+  font-size: 40px;
+  font-family: "HelveticaNeue";
+}
