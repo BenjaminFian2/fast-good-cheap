@@ -30,6 +30,18 @@ footer a {
   font-weight: bold;
 }
 
+p {
+  margin-left: 200px;
+  font-size: 40px;
+  font-family: "HelveticaNeue";
+}
+
+footer p {
+  font-size: 25px;
+  margin-left: 0;
+  font-family: arial;
+}
+
 /* Source Toogle button : https://www.w3schools.com/howto/howto_css_switch.asp*/
 
 .switch {
@@ -131,10 +143,4 @@ input:checked + .sliderB:before {
 .sliderG.round:before,
 .sliderB.round:before {
   border-radius: 50%;
-}
-
-p {
-  margin-left: 200px;
-  font-size: 40px;
-  font-family: "HelveticaNeue";
 }

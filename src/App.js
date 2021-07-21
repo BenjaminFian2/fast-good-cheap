@@ -50,7 +50,6 @@ function App() {
         <label className="switch">
           <input
             type="checkbox"
-            defaultChecked={checked1}
             onChange={handleClickBtn1}
             checked={checked1}
           />
@@ -60,7 +59,6 @@ function App() {
         <label className="switch">
           <input
             type="checkbox"
-            defaultChecked={checked2}
             onChange={handleClickBtn2}
             checked={checked2}
           />
@@ -70,7 +68,6 @@ function App() {
         <label className="switch">
           <input
             type="checkbox"
-            defaultChecked={checked3}
             onChange={handleClickBtn3}
             checked={checked3}
           />
