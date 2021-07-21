@@ -16,7 +16,7 @@ function App() {
       } else {
         setChecked2(false);
       }
-      setBool1(Math.random() >= 0.5);
+      setBool1(!bool1);
     }
   };
 
@@ -28,7 +28,7 @@ function App() {
       } else {
         setChecked3(false);
       }
-      setBool2(Math.random() >= 0.5);
+      setBool2(!bool2);
     }
   };
 
@@ -40,7 +40,7 @@ function App() {
       } else {
         setChecked2(false);
       }
-      setBool3(Math.random() >= 0.5);
+      setBool3(!bool3);
     }
   };
 
